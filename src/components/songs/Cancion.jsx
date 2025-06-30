@@ -1,7 +1,7 @@
-import React from 'react'
 
 export default function Cancion({cancion}) {
-    const { img, title, artist,url } = cancion;
+  const { img, title, artist,url } = cancion;
+
   return (
     <div className="card bg-transparent text-white border-0 cancion">
         <a href={url} target='_blank'>

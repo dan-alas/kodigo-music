@@ -28,6 +28,7 @@ export default function Header() {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            
             {/* Icono de Home*/}
             <ul className="navbar-nav mb-2 mb-lg-0 ">
               <li className="nav-item">

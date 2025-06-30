@@ -1,11 +1,9 @@
 :root {
-
     --color-kodigo: #120d24;
     --color-secundario: #1e1837eb;
     --color-terciario: #2f284eeb;
     --color-blaco: #ffffff;
     --boton-color: #00af8e;
-
 }
 
 .bg-primary {
@@ -14,12 +12,12 @@
 
 .bg-light {
     background-color: var(--color-secundario) !important;
-    
 }
 
 .btn-success{
   background-color: var(--boton-color);
 }
+
 .bg-ultra-light {
   background-color: var(--color-terciario);
 }
@@ -32,38 +30,34 @@
   color: rgba(255, 255, 255, 0.6) !important;
 }
 
-
 .scroll-x-hide {
   overflow-x: auto;
 }
 
 .scroll-x-hide::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none; 
 }
 
 .scroll-y-hide {
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none; 
 }
 
 .scroll-y-hide::-webkit-scrollbar {
-  display: none; /* Chrome, Safari y Edge nuevos */
+  display: none;
 }
 
 .cancion{
   min-width: 9.3rem;
-
 }
 
 .img-card{
   height: 9.18rem;
-
 }
 
 .artist-img{
   width: 9.5rem;
   height: 9.5rem;
   object-fit: cover;
-
 }
 
 
@@ -71,18 +65,20 @@
   .bg-light-app{
     background-color: var(--color-secundario);
   }
+
   .cancion{
     min-width: 12.5rem;
     scroll-snap-align: start;
   }
+
   .img-card{
     height: 12.1875rem;
   }
+  
   .artist-img{
     width: 12.5rem;
     height: 12.5rem;
     object-fit: cover;
-
   }
     
 }

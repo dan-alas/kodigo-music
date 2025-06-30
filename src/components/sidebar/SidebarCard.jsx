@@ -1,9 +1,6 @@
-import React from 'react'
 
 export default function SidebarCard({card}) {
-
     const {title, description, buttonText} = card
-    
   return (
     
      <div className="text-white bg-ultra-light p-3 rounded mt-3">
