@@ -59,6 +59,12 @@
 
 }
 
+.artist-img{
+  width: 9rem;
+  height: 9rem;
+  object-fit: cover;
+
+}
 
 
 @media (min-width: 768px) {
@@ -71,6 +77,12 @@
   }
   .img-card{
     height: 12.1875rem;
+  }
+  .artist-img{
+    width: 12.5rem;
+    height: 12.5rem;
+    object-fit: cover;
+
   }
     
 }

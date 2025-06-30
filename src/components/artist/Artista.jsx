@@ -4,8 +4,8 @@ export default function Artista({artista}) {
     const { img, name, description } = artista;
   return (
     <div style={{ minWidth: "150px" }}>
-        <img src={img} className="rounded-circle" style={{ width: "200px", height: "200px", objectFit: "cover" }} alt={name}/>
-        <h5 className="fs-5 mt-2">{name}</h5>
+        <img src={img} className="rounded-circle artist-img" alt={name}/>
+        <h5 className="fs-5 mt-2 text-center">{name}</h5>
         <p>{description}</p>
     </div>
 

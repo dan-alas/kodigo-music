@@ -6,7 +6,7 @@ export default function Cancion({cancion}) {
     <div className="card bg-transparent text-white border-0 cancion">
         <img src={img} className="card-img-top img-card" alt="Cancion"/>
 
-        <div className="card-body">
+        <div className="card-body px-0">
             <h5 className="card-title fs-6 fs-md-5">{title}</h5>
             <p className="card-text">{artist}</p>
         </div>
