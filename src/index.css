@@ -48,3 +48,10 @@
 .scroll-y-hide::-webkit-scrollbar {
   display: none; /* Chrome, Safari y Edge nuevos */
 }
+
+@media (min-width: 768px) {
+  .bg-light-app{
+    background-color: var(--color-secundario);
+  }
+    
+}
