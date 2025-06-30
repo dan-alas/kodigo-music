@@ -1,12 +1,38 @@
-## Kodigo Music
+# Kodigo Music
 
-App developed with React and bootstrap
+> **App desarrollada con React y Bootstrap.**  
+Disfruta una interfaz elegante para explorar artistas y música.
 
-#### Project dependencies:
+---
 
-bootstrap: npm i bootstrap@5.3.7
-bootstrap-icons: npm i bootstrap-icons
-firebase: npm i firebase
-lucide-react: npm install lucide-react
-react-hook-form: npm i react-hook-form
-react-router-dom: npm i react-router-dom
+## Tecnologías principales
+-**React**
+-**Bootstrap 5**
+-**Firebase**
+-**React Router**
+-**React Hook Form**
+-**Lucide React Icons**
+-**Bootstrap Icons**
+
+---
+
+## Instalación de dependencias
+
+```bash
+# Bootstrap (5.3.7)
+npm install bootstrap@5.3.7
+
+# Bootstrap Icons
+npm install bootstrap-icons
+
+# Firebase
+npm install firebase
+
+# Lucide React Icons
+npm install lucide-react
+
+# React Hook Form
+npm install react-hook-form
+
+# React Router DOM
+npm install react-router-dom
