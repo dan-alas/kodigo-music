@@ -11,6 +11,7 @@ import { useState } from 'react';
 export default function LoginForm() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const [errorLogin, setErrorLogin] = useState(""); // para almacenar el error
+  const [mensajeBienvenida, setMensajeBienvenida] = useState("");
   const navigate = useNavigate();
 
   const onSubmit = async (data) => {
@@ -19,7 +20,12 @@ export default function LoginForm() {
       const user = userCredential.user;
       console.log("Usuario autenticado:", user.email);
 
-      navigate("/");
+      setMensajeBienvenida(`¡Bienvenido ${user.email}!`);  // muestra mensaje
+
+      setTimeout(() => {
+        setMensajeBienvenida("");   // limpia mensaje
+        navigate("/");              // redirige
+      }, 3000); // 3 segundos
 
     } catch (error) {
       console.error("Error al iniciar sesión:", error.message);
@@ -59,6 +65,7 @@ export default function LoginForm() {
 
                 <button className="btn btn-success">Iniciar Sesión</button>
                 {errorLogin && (<p className="text-danger mt-3">{errorLogin}</p>)}
+                {mensajeBienvenida && (<p className="text-success mt-3">{mensajeBienvenida}</p>)}
 
             </form>
 

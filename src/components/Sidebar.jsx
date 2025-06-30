@@ -7,7 +7,7 @@ export default function Sidebar() {
 
   return (
 
-    <aside className="col-md-3 d-none d-md-block" style={{ height: "100vh" }}>
+    <aside className="col-md-3 d-none d-xl-block" style={{ height: "100vh" }}>
         <div className="bg-light d-flex flex-column p-3 rounded h-100">
             <div className="container">
                 <div className="d-flex justify-content-between align-items-center">

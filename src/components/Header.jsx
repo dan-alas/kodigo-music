@@ -14,6 +14,13 @@ export default function Header() {
             <img className="img-fluid" width="50" src="https://res.cloudinary.com/drztldzvn/image/upload/v1750637194/images_udc17a.png" alt=""/>
           </Link>
 
+          {!usuario ? ( //Para modificar header si esta logueado o no
+                <>
+                  <p className='d-xl-none text-white'>Inicia Sesión</p>
+                </> ) : (
+                <p className="d-xl-none text-white">Sesion Iniciada</p>
+              )}
+
           <button className="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" 
                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
                   aria-expanded="false" aria-label="Toggle navigation">
@@ -41,9 +48,9 @@ export default function Header() {
               </div>
             </form>
 
-            <ul className="navbar-nav mb-2 mb-lg-0 ms-auto align-items-md-center gap-2">
+            <ul className="navbar-nav mb-2 mb-lg-0 ms-auto align-items-xl-center gap-2">
 
-              <li className="nav-item"><Link className="nav-link text-light" to="/Podcast">Podcast</Link></li>
+              <li className="nav-item"><Link className="nav-link text-light mt-4 mt-xl-auto" to="/Podcast">Podcast</Link></li>
               <li className="nav-item"><a className="nav-link text-light" href="https://kodigo.org/" target='_blank'>Kodigo</a></li>
 
               {!usuario ? ( //Para modificar header si esta logueado o no
