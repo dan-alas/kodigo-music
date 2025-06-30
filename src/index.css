@@ -49,9 +49,28 @@
   display: none; /* Chrome, Safari y Edge nuevos */
 }
 
+.cancion{
+  min-width: 9.3rem;
+
+}
+
+.img-card{
+  height: 9.18rem;
+
+}
+
+
+
 @media (min-width: 768px) {
   .bg-light-app{
     background-color: var(--color-secundario);
+  }
+  .cancion{
+    min-width: 12.5rem;
+    scroll-snap-align: start;
+  }
+  .img-card{
+    height: 12.1875rem;
   }
     
 }
